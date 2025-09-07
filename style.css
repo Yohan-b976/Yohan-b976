@@ -18,6 +18,10 @@ header h1 {
     font-size: 48px;
 }
 
+h1.h1_soul {
+    text-decoration: underline;
+}
+
 nav {
     background-color: #808080;
     padding: 10px 0;
@@ -67,7 +71,8 @@ nav a:hover {
     text-align: center; /* centre le texte lui-même */
 }
 
-button {
+/* Styles généraux pour boutons */
+button, .btn {
     padding: 12px 24px;
     font-size: 16px;
     background-color: #1E88E5;
@@ -76,11 +81,53 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
+    text-decoration: none; /* enlève le soulignement des <a> */
+    display: inline-block; /* permet de styler les <a> comme des boutons */
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+button:hover, .btn:hover {
     background-color: #0D47A1;
+}
+
+/* Variante pour bouton GitHub */
+.btn.secondary {
+    background-color: #43A047; /* vert */
+}
+
+.btn.secondary:hover {
+    background-color: #2E7D32;
+}
+
+/* Styles spécifiques pour les projets */
+.project {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 800px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.project h2 {
+    margin-top: 0;
+    color: #1565C0;
+    text-align: center;
+}
+
+
+.project p {
+    margin: 15px 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* centre les boutons */
+    gap: 15px; /* espace entre eux */
+    flex-wrap: wrap; /* sur petits écrans, ils passent l’un sous l’autre */
 }
 
 footer {
