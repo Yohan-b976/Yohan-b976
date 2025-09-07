@@ -1,66 +1,91 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    text-align: center;
+    background-color: #FFFFFF;
+    color: #2C2C2C;
+    text-align: center; /* centré pour header/footer */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: darkblue;
-    color: white;
-    padding: 40px 20px;
+    background-color: #1976D2;
+    color: #FFFFFF;
+    padding: 40px 20px 20px 20px;
 }
 
 header h1 {
-    margin: 0;
-    margin-bottom: 30px; 
+    margin: 0 0 20px 0;
     font-size: 48px;
 }
 
-header p {
-    margin: 10px 0 20px;
-    font-size: 20px;
-}
-
 nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    background-color: #808080;
+    padding: 10px 0;
 }
 
 nav a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
+    margin: 0 25px; /* espace entre les liens */
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #f0f0f0;
+    text-decoration: underline; /* soulignement au survol */
 }
 
 .intro {
     margin: 50px 20px;
+    text-align: left; /* texte aligné à gauche pour la photo */
+}
+
+.intro h2 {
+    text-align: center; /* titre centré */
+    margin-bottom: 30px; /* espace sous le titre */
+}
+
+.intro-container {
+    display: flex;
+    align-items: center; /* aligne photo et texte verticalement */
+    gap: 30px; /* espace entre photo et texte */
+    flex-wrap: wrap; /* passe sous la photo sur petits écrans */
+}
+
+.intro-photo {
+    width: 200px; /* taille de la photo */
+    height: auto;
+    border-radius: 10px;
+}
+
+.intro-text {
+    flex: 1; /* texte prend le reste de la largeur */
+    display: flex;
+    flex-direction: column; /* texte et bouton empilés verticalement */
+    justify-content: center; /* centre verticalement par rapport à la photo */
+    align-items: center; /* centre horizontalement */
+    text-align: center; /* centre le texte lui-même */
 }
 
 button {
     padding: 12px 24px;
     font-size: 16px;
-    background-color: darkblue;
-    color: white;
+    background-color: #1E88E5;
+    color: #FFFFFF;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: navy;
+    background-color: #0D47A1;
 }
 
 footer {
-    background-color: #222;
-    color: #ccc;
+    background-color: #808080; /* gris du footer conservé */
+    color: #FFFFFF;
     padding: 20px;
+    font-size: 14px;
 }
-
