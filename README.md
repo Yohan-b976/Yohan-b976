@@ -46,7 +46,7 @@ Found a bug or have an idea to improve this site? Contributions are welcome!
 ---
 
 ## License
-This project is licensed under the **[MIT License]**.
+This project is licensed under the **MIT License**.
 
 ---
 © 2025 Yohan Beaumatin
