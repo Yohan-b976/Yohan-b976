@@ -19,7 +19,7 @@ Welcome to my personal website! This space is dedicated to showcasing my work, p
 | **Bioinformatics** | DESeq2, bioconda, ARIBA |
 | **Development** | Python, Bash, Git, VS Code, R |
 | **Containerization** | Docker, environment management |
-| **Data Analysis** | R, Python, ggplot2, matplotlib |
+| **Data Analysis** | R, Python |
 
 ---
 
